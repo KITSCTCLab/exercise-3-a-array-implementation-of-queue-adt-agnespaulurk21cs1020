@@ -120,7 +120,8 @@ solution = Solution(length_of_text)
 # push/enqueue all the characters of string text to stack
 for index in range(length_of_text):
     character=text[index]
-    Solution.push_character(character)
+    solution.push_character(character)
+    solution.enqueue_character(character)
 
 is_palindrome = True
 '''
@@ -131,7 +132,7 @@ If the comparison fails, set is_palindrome as False.
 '''
 
 
-if Solution.pop_character()!=Solution.dequeue_character():
+if solution.pop_character()!=solution.dequeue_character():
     is_palindrome = False
 
 
