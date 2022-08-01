@@ -132,7 +132,9 @@ If the comparison fails, set is_palindrome as False.
 '''
 
 
-if solution.pop_character()!=solution.dequeue_character():
+if solution.pop_character()==solution.dequeue_character():
+    is_palindrome = True
+else:
     is_palindrome = False
 
 
