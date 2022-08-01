@@ -23,6 +23,7 @@ class Solution:
         self.front = -1
 
     def is_stack_empty(self):
+        
         """
         Check whether the stack is empty.
         Returns:
@@ -56,7 +57,7 @@ class Solution:
         Returns:
           True if it is full, else returns False.
         """
-         return self.rear==self.size-1
+        return self.rear==self.size-1
           
 
     def push_character(self, character):
