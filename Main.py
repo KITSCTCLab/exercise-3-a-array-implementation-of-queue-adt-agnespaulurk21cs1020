@@ -85,7 +85,7 @@ class Solution:
         if not self.is_queue_full:
             if self.front==-1:
                 self.front=0
-            self.rear=self.rear+1
+            self.rear+=1
             self.queue.append(character)
             
 
@@ -106,7 +106,7 @@ class Solution:
           The data that is dequeued if the queue is not empty.
         """
         if not self.is_queue_empty():
-            self.front=self.front+1
+            self.front+=1
             return self.queue.pop(self.front-1)
 
 
