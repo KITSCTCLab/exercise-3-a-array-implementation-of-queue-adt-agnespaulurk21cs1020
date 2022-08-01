@@ -119,7 +119,8 @@ solution = Solution(length_of_text)
 
 # push/enqueue all the characters of string text to stack
 for index in range(length_of_text):
-    Solution.push_character(text[index])
+    character=text[index]
+    Solution.push_character(character)
 
 is_palindrome = True
 '''
