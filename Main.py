@@ -76,9 +76,9 @@ class Solution:
         Arguments:
             character: A character that will be enqueued to queue.
         """
-        if not self.is_queue_full:
+        if not self.is_queue_full():
             if self.front==-1:
-                self.front+=1
+                self.front=0
             self.rear+=1
             self.queue.append(character)
             
@@ -101,7 +101,7 @@ class Solution:
         """
         if not self.is_queue_empty():
             self.front+=1
-            return self.queue.pop(self.front-1)
+            return self.queue[self.front-1]
 
 
 # read the string text
@@ -128,7 +128,7 @@ If the comparison fails, set is_palindrome as False.
 '''
 
 for index in range(length_of_text):
-    if solution.pop_character()!=solution.dequeue_character():
+    if solution.pop_character() != solution.dequeue_character():
         is_palindrome = False
 
 
