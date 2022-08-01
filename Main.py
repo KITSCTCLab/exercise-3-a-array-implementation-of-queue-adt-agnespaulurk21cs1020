@@ -78,7 +78,7 @@ class Solution:
         """
         if not self.is_queue_full:
             if self.front==-1:
-                self.front=+=1
+                self.front+=1
             self.rear+=1
             self.queue.append(character)
             
