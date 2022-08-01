@@ -28,10 +28,9 @@ class Solution:
         Returns:
           True if it is empty, else returns False.
         """
-        if self.top==-1:
-            return True
-        else:
-            return False
+        return  self.top==-1:
+            
+       
 
     def is_queue_empty(self):
         """
@@ -39,10 +38,8 @@ class Solution:
         Returns:
           True if it is empty, else returns False.
         """
-        if self.front==-1 or self.front>self.rear:
-            return True
-        else:
-            return False
+        return self.front==-1 or self.front>self.rear:
+            
 
     def is_stack_full(self):
         """
@@ -50,10 +47,8 @@ class Solution:
         Returns:
           True if it is full, else returns False.
         """
-        if self.top==self.size-1:
-            return True
-        else:
-            return False
+        return self.top==self.size-1:
+            
 
     def is_queue_full(self):
         """
@@ -61,10 +56,8 @@ class Solution:
         Returns:
           True if it is full, else returns False.
         """
-        if self.rear==self.size-1:
-            return True
-        else:
-            return False
+         return self.rear==self.size-1:
+          
 
     def push_character(self, character):
         """
